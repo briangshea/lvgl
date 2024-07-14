@@ -478,7 +478,7 @@ static void draw_main(lv_event_t * e)
             int32_t corr = (label_dsc.font->line_height - normal_label_font->line_height) / 2;
 
             /*Apply the proportional position to the selected text*/
-            res_p.y -= corr;
+            res_p.y -= corr *2;
             int32_t label_sel_y = roller_h / 2 + obj->coords.y1;
             label_sel_y += (label_y_prop * res_p.y) >> 14;
             label_sel_y -= corr;
